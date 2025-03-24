@@ -12,7 +12,7 @@ export const Hero = () => {
               <div>
                   <div className='hero-hand-icon'>
                       <p>New</p>
-                      <img src={hand_icon}></img>                      
+                      <img src={hand_icon} alt=""></img>                      
                   </div>
                   <p>collection</p>
                   <p>for everyone</p>
@@ -22,8 +22,9 @@ export const Hero = () => {
                   <img src={arrow_icon} alt="" />
               </div>
           </div>
-          <div className="hero-right"></div>
-          <img src={hero} alt="" />
+          <div className="hero-right">
+            <img src={hero} alt="" />
+        </div>
           
           
       </div>
