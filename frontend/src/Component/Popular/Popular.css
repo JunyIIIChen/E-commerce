@@ -2,27 +2,36 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap:10px;
-    height: 90vh;
+    gap: 10px;
+    max-width: 1280px;
+    margin: auto;
 }
-
 .popular h1{
     color: #171717;
-    font-size: 50px;
+    font-size: 40px;
     font-weight: 600;
 }
-
-/* there is a bug for height */
 .popular hr{
-    width: 200px;
-    height: 10px;
+    width: 150px;
+    height: 4px;
     border-radius: 10px;
-    color: #252525;
+    background: #252525;
 }
-
 .popular-item{
-    margin-top: 50px;
+    margin-top: 40px;
     display: flex;
-    gap: 30px;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
 }
 
+@media(max-width: 800px){
+    .popular h1{
+        font-size: 30px;
+    }
+    .popular hr{
+        width: 80px;
+        height: 4px;
+        
+    }
+}
